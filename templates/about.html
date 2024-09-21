@@ -1,0 +1,188 @@
+{% extends 'master.html' %} 
+{% load static %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% block content %} 
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>About Us</title>
+    <style>
+      .hero {
+        background: url("https://via.placeholder.com/1500x500") no-repeat center
+          center;
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .team-member img {
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:8000/home/">Daraz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/home/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/product/">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:8000/contact/"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex ms-2">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav> -->
+
+    <!-- <header class="hero">
+      <div class="container">
+     
+        <img
+          src="https://blog.daraz.pk/wp-content/uploads/2020/09/DARAZ-QUESTION-BANNER.jpg"
+          class="img-fluid"
+          alt="About Daraz"
+          style="height: 100px"
+        />
+      </div>
+    </header>  -->
+    <img
+      src="https://blog.daraz.pk/wp-content/uploads/2020/09/DARAZ-QUESTION-BANNER.jpg"
+      class="img-fluid d-block mx-auto"
+      alt="About Daraz"
+      style="height: 300px; width: 1200px"
+    />
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2>Welcome to Daraz</h2>
+            <p>
+              At Daraz, we are committed to providing the best shopping
+              experience for our customers. Our journey began with a simple
+              goal: to make online shopping accessible and enjoyable for
+              everyone. Over the years, we have expanded our range of products
+              and services, striving to exceed our customers' expectations.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://daraz.com/wp-content/uploads/2022/01/Landscape.png"
+              class="img-fluid"
+              alt="About Daraz"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section> -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
+{% endblock %}
